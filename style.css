@@ -1,0 +1,251 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --icon-pale-blue: hsl(243, 100%, 93%);
+    --icon-dark-blue: hsl(228, 56%, 26%);
+    --text-grayish: hsl(229, 7%, 55%);
+    --icon-vdb: hsl(229, 57%, 11%);
+  }
+
+  body{
+    font-size: 14px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 100px;
+    background-color: var(--icon-vdb);
+  }
+
+  .container{
+        width: 350px;
+        background:url(./images/bg-mobile.png); 
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 100px;
+        padding-bottom: 200px;
+  }
+
+  .fylo-container{
+    width:90%;
+    margin: 10px;
+    background:var(--icon-dark-blue);
+    padding:2rem;
+    border-radius: 10px 120px 10px 10px;
+  }
+
+div.fylo-logo{
+    display: flex;
+    flex-direction: row;
+}
+
+div.icon-icon{
+    display: flex;
+    width: 210px;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 25px;
+
+
+}
+
+.document,.folder,.upload{
+    background-color:var(--icon-vdb);
+    width: 52px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.upload:hover{
+    background-color: rgb(76, 76, 104);
+    transition: 0.3s ease;
+}
+.folder:hover{
+    background-color: rgb(76, 76, 104);
+    transition: 0.3s ease;
+}
+
+.document:hover{
+    background-color: rgb(76, 76, 104);
+    transition: 0.3s ease;
+}
+
+div.storage{
+    width: 100%;
+    height: 150px;
+    background: var(--icon-dark-blue);
+    margin-top: 30px;
+    border-radius: 10px;
+    color: var(--text-grayish);
+    padding: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+div.storage p{
+    margin-top: 20px;
+    text-align: center;
+    font-weight:600;
+}
+
+.storage-size{
+    color:rgba(255, 255, 255, 0.808);
+    font: 700;
+  
+
+}
+
+div.gradient-container{
+  width:80%;
+  height: 15px;
+  background-color: var(--icon-vdb);
+  border-radius: 15px 15px 15px 15px;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+.gradient{
+  width:80%;
+  height: 13px;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 15px 15px 15px 15px;
+  position: absolute;
+  top: 1px;
+  left: 2px;
+}
+
+.gradient .inner-white{
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+  }
+
+ .data-limit{
+  display:flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  gap: 150px;
+  width: 86%;
+  position: relative;
+  bottom: 23px;
+  left:0;
+  top: 10px;
+  font-weight: 700;
+  color:var(--icon-pale-blue);
+  margin: auto;
+ } 
+
+ .data-left{
+  width: 150px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 10px;
+  top: 20px;
+  right: 45px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+ }
+
+.data-left h1{
+    font-size: 2rem;
+    color: var(--icon-vdb); 
+}
+
+.GB-left{
+    font-size: 12px;
+    color:var(--text-grayish);
+}
+
+@media (min-width: 1230px){
+    body{
+      width: 100%;
+      margin: 250px auto;
+      background: var(--icon-vdb) url('./images/bg-desktop.png');
+      background-repeat: no-repeat;
+      background-position-y: bottom;
+      background-position-x:center;
+      background-size: contain;
+    }
+  
+    .container{
+      padding:auto;
+      display:flex;
+      flex-direction: row;
+      width:50%;
+      gap:20px;
+      background: transparent;
+      margin-top: -150px;
+    }
+
+    .fylo-container{
+      width:550px;
+
+    }
+  
+  div .storage{
+    position: relative;
+    right: 60px;
+    width: 500px;
+  }
+  
+  div .gradient-container{
+    width: 80%;
+    margin-top: 10px;
+  }
+  
+  div .gradient{
+    width:80%;
+  }
+  
+  div .storage-size{
+    gap: 245px;
+    left: -20px;
+  }
+
+  .data-limit{
+    display: flex;
+    width: 82%;
+    gap: 78%;
+  }
+  
+  div .data-left{
+    top: -150px;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    right: 20px;
+  }
+  
+  div .storage p{
+    text-align: left;
+    margin-left: 30px;
+    font-size: 12px;
+  }
+  
+  
+  div .style-data{
+    width: 0;
+    height:0;
+    border: 15px solid transparent;
+    border-bottom: 0;
+    border-top: 35px solid white;
+    position: absolute;
+    left: 128px;
+    margin-top: -1px;
+    transform: skew(22deg)
+  }
+}
