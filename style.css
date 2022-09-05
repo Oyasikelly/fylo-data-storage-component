@@ -174,23 +174,22 @@ div.gradient-container{
 @media (min-width: 1230px){
     body{
       width: 100%;
-      margin: 250px auto;
+      margin: 350px auto;
       background: var(--icon-vdb) url('./images/bg-desktop.png');
       background-repeat: no-repeat;
       background-position-y: bottom;
-      background-position-x:center;
+      background-position-x:right;
       background-size: contain;
     }
   
     .container{
-      padding:auto;
+      padding:1rem;
       display:flex;
       flex-direction: row;
       width:1000px;
       gap:20px;
       background: transparent;
-      margin-top: -150px;
-      border: 2px solid gold;
+      margin-top:-100px;
     }
 
     .fylo-container{
@@ -221,8 +220,7 @@ div.gradient-container{
   .data-limit{
     display: flex;
     width: 85%;
-    gap:80%;
-    border: 2px solid yellow;
+    gap: 80%;
   }
   
   div .data-left{
@@ -246,7 +244,7 @@ div.gradient-container{
     border-bottom: 0;
     border-top: 35px solid white;
     position: absolute;
-    left: 128px;
+    left: 127.5px;
     margin-top: -1px;
     transform: skew(22deg)
   }
